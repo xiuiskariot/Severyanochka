@@ -1,0 +1,103 @@
+.promotions
+  background: #E5E5E5
+  padding: 77px 0 0
+  &__wrap
+    display: grid
+  &__tittle
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    & > a
+      display: flex
+      justify-content: space-between
+      width: 140px
+      height: 24px
+      text-decoration: none
+      font-size: 16px
+      line-height: 150%
+      color: #606060
+      & > img
+        rotate: -90deg
+        width: 13px
+        margin-left: 0px
+  &__card
+    width: 272px
+    height: 349px
+    padding-bottom: 8px 
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
+    & > img
+      width: 100%
+    &__products
+      position: relative
+      width: 100%
+    & .to_favorites
+      position: absolute
+      top: 8px
+      right: 8px
+      border: none
+      background: none
+      cursor: pointer
+    & .discount
+      position: absolute
+      top: 118px
+      left: 10px
+      width: 56px
+      height: 32px
+      background: #FF6633
+      color: #FFFFFF
+      border-radius: 4px
+      display: flex
+      align-items: center
+      justify-content: center
+    & .price 
+      display: flex
+      width: 100%
+      justify-content: space-between
+      padding: 0 8px
+      &__with_card
+        & > b
+          color: #414141
+          font-size: 18px
+          line-height: 150%
+        &__text
+          font-weight: 400
+          font-size: 12px
+          line-height: 150%
+          color: #BFBFBF
+      &__without_card
+        &__thin
+          color: #606060
+          font-size: 16px
+          line-height: 150%
+          margin-top: 2px  
+        &__text
+          font-weight: 400
+          font-size: 12px
+          line-height: 150%
+          color: #BFBFBF
+          text-align: end
+    & .to_basket
+      width: 256px
+      height: 42px
+      font-size: 16px
+      line-height: 150%
+      color: #70C05B
+      border: 1px solid #70C05B
+      border-radius: 4px
+      background: #FFFFFF
+      cursor: pointer
+    & .to_basket:hover
+      background: #FF6633
+      color: #FFFFFF
+      border: none
+    &__name
+      padding: 0 8px
+    & > .rates
+      padding: 0 8px
+      width: 100%
+      & > img
+        margin-right: 4px

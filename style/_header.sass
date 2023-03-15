@@ -1,0 +1,147 @@
+.header-main
+  &__container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 72px
+    align-items: center
+  &__lk
+    display: flex
+    flex-direction: row
+    align-items: center
+    border: none
+    background: #FFFFFF
+    cursor: pointer
+    & > p
+      margin-right: 30px
+    &__avatar
+      display: block
+      margin-right: 10px
+  &__logo
+    display: flex
+    align-items: center
+  &__logo-mobile
+    height: 32px
+    width: 40px
+    margin-right: 15px
+  &__logo-desktop
+    height: 10px
+    width: 100px
+  &__nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    & > a
+      padding: 11px 
+      display: flex
+      flex-direction: column 
+      justify-content: space-between
+      text-decoration: none
+      align-items: center
+      & > p
+        font-size: 12px
+        line-height: 150%
+        color: #414141
+        margin-top: 10px
+
+
+.katalog__bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 40px
+  width: 140px
+  background: #70C05B
+  text-decoration: none
+  color: #FFFFFF
+  border-radius: 4px
+ 
+  & > span
+    display: block
+    height: 1px
+    width: 19px
+    background: #FFFFFF
+    position: relative
+  & > span::before
+    content: ""
+    display: block
+    height: 1px
+    width: 19px
+    background: #FFFFFF
+    position: absolute
+    bottom: 5px
+  & > span::after
+    content: ""
+    display: block
+    height: 1px
+    width: 19px
+    background: #FFFFFF
+    position: absolute
+    top: 5px
+  & > p
+    margin-left: 30px
+    font-size: 16px
+    line-height: 150%
+
+.searching
+  position: relative
+  width: 375px
+  & > input, & > button 
+    outline: none
+    border-radius: 4px
+  & > input
+    width: 100%
+    height: 40px
+    background: #FFFFFF
+    padding-left: 15px
+    padding-right: 42px
+    border: #70C05B 1px solid
+  & > button
+    height: 90%
+    width: 50px
+    position: absolute
+    top: 1px
+    right: 3px
+    background-image: url("/img/header/search.svg")
+    background-repeat: no-repeat
+    background-position: center 
+    cursor: pointer
+    border: none
+    background-color: #FFFFFF
+
+
+@media (max-width:  1000px)
+  .header-main
+    &__logo-desk
+      display: none
+    &__lk
+      display: none
+  .katalog__bottom
+    // width: 40px 
+    margin-right: 20px
+
+@media ( max-width: 760px)
+  .katalog__bottom
+    width: 40px 
+    margin-right: 20px
+    & > p
+     display: none
+
+@media ( max-width: 630px)
+  .header-main
+    &__nav
+      display: none
+  .katalog__bottom
+    display: none
+  .searching 
+    width: 500px  
+
+
+
+  
+
+  
+  
+
+
+
